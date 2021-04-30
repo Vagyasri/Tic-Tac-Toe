@@ -64,7 +64,7 @@ def check_winner
   end
 
   puts "Want to repeat? (Y/N)"
- decission = gets.chomp
+ decission = gets.chomp.upcase
  if decission == "Y"
   check_winner
  else
