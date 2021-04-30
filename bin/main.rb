@@ -36,8 +36,15 @@ players = user_presentation
     user_interface(cells)
     puts "It's #{players[0]}'s turn!"
     puts ''
-    puts 'Please select an available space from the board'
-    num = gets.chomp.to_i
+    begin
+      puts 'Please select an available space from the board'
+      num = gets.chomp.to_i
+      raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !num.is_a?(Integer)
+    rescue StandardError
+      puts 'Ivalid input: Please select a number from 1-9'
+      puts ''
+      retry
+    end
   else
     user_interface(cells)
     puts "It's #{players[1]}'s turn!"
@@ -49,9 +56,9 @@ end
 
 if true
   puts ''
-  puts "Lucky is the winner"
+  puts 'Lucky is the winner'
 elsif !true
-  puts "Peter is the winner"
+  puts 'Peter is the winner'
 else
   puts "It's a tie"
 end
