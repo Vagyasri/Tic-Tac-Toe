@@ -2,7 +2,9 @@
 
 # Tic-Tac-Toe
 
-> Built a tic-tac-toe game on the command line where two human players can play against each other and the board is displayed in between turns.
+> We built a tic-tac-toe game on the command line where two human players can play against each other and the board is displayed in between turns.
+
+> Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner. 
 
 ## Built With
 
@@ -13,9 +15,9 @@
 
 ### To get a local copy run the following steps:
 
-- [Copy this link](https://github.com/Vagyasri/FizzBuzz.git)
+- [Copy this link](https://github.com/Vagyasri/Tic-Tac-Toe.git)
 - Open your terminal or command line
-- Run "git clone [Paste this link](https://github.com/Vagyasri/FizzBuzz.git)"
+- Run "git clone [Paste this link](https://github.com/Vagyasri/Tic-Tac-Toe.git)"
 
 ## Author
 
@@ -35,7 +37,17 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Vagyasri/Tic-Tac-Toe/issues).
+Start by:
+
+- Forking the project
+- Cloning the project to your local machine
+- Run git checkout -b your-branch-name
+- Make your contributions
+- Push your branch up to your forked repository
+- Open a Pull Request with a detailed description to the development branch of the original project for a review
+
+Feel free to check the [issues page](https://github.com/Vagyasri/Tic-Tac-Toe/issues), contribute to the Project by creating an issue.
+
 
 ## Show your support
 
