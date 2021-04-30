@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Title
+# Tic-Tac-Toe
 
-> Description
+> Built a tic-tac-toe game on the command line where two human players can play against each other and the board is displayed in between turns.
 
 ## Built With
 
@@ -25,11 +25,17 @@
 - Twitter: [@Vagyasri](https://twitter.com/Vagyasri)
 - LinkedIn: [Bhagyashree Patra](https://www.linkedin.com/in/bhagyashree-patra-029bb059/)
 
+**Peter Mbuthia**
+
+- GitHub: [@blakbox23](https://github.com/blakbox23)
+- Twitter: [@blakbox23](https://twitter.com/blakbox23)
+- LinkedIn: [Peter Mbuthia](https://www.linkedin.com/in/peter-mbuthia-b15791182/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Vagyasri/FizzBuzz/issues).
+Feel free to check the [issues page](https://github.com/Vagyasri/Tic-Tac-Toe/issues).
 
 ## Show your support
 
