@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 def user_presentation
   puts ''
   puts 'WELCOME TO TIC-TAC-TOE'
