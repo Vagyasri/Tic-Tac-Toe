@@ -47,7 +47,7 @@ players = user_presentation
     raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num-1].is_a?(Integer)
   rescue StandardError
     puts ''
-    puts 'Ivalid input: Please select a number from 1-9'
+    puts '🛑Invalid input: Please select a number from 1-9'
     puts ''
     retry
   end
@@ -56,10 +56,11 @@ end
 result = 0
 if result.positive?
   puts ''
-  puts 'Lucky is the winner'
-  puts ''
+  puts '🏆Lucky is the winner🏆'
 elsif result.negative?
-  puts 'Peter is the winner'
+  puts '🏆Peter is the winner🏆'
 else
-  puts "It's a tie"
+  puts "👏It's a tie👏"
 end
+puts ''
+puts "⛳️Game Over⛳️"
