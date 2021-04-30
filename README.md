@@ -35,7 +35,17 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Vagyasri/Tic-Tac-Toe/issues).
+Start by:
+
+- Forking the project
+- Cloning the project to your local machine
+- Run git checkout -b your-branch-name
+- Make your contributions
+- Push your branch up to your forked repository
+- Open a Pull Request with a detailed description to the development branch of the original project for a review
+
+Feel free to check the [issues page](https://github.com/Vagyasri/Tic-Tac-Toe/issuess), contribute to the Project by creating an issue.
+
 
 ## Show your support
 
