@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 def user_presentation
   puts ''
   puts 'WELCOME TO TIC-TAC-TOE'
@@ -15,6 +17,7 @@ def user_presentation
   puts ''
   [player_one, player_two]
 end
+
 def user_interface(array)
   puts ' +---+---+---+'
   puts " | #{array[0]} | #{array[1]} | #{array[2]} |"
@@ -25,7 +28,9 @@ def user_interface(array)
   puts ' +---+---+---+'
   puts ''
 end
+
 cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 players = user_presentation
 (0..8).each do |i|
   user_interface(cells)
