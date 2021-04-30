@@ -27,8 +27,7 @@ def user_interface(array)
   puts ' +---+---+---+'
 end
 
-
 user_presentation
 
-cells=[1,2,3,4,5,6,7,8,9]
+cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 user_interface(cells)
