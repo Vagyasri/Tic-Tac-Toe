@@ -29,38 +29,49 @@ def user_interface(array)
   puts ''
 end
 
+def check_winner
+  cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  players = user_presentation
+  (0..8).each do |i|
+    user_interface(cells)
+    if i.even?
+      puts "It's #{players[0]}'s turn!"
+    else
+      puts "It's #{players[1]}'s turn!"
+    end
+    begin
+      puts ''
+      puts 'Please select an available space from the board'
+      num = gets.chomp.to_i
 
-cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-players = user_presentation
-(0..8).each do |i|
-  user_interface(cells)
-  if i.even?
-    puts "It's #{players[0]}'s turn!"
+      raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num-1].is_a?(Integer)
+    rescue StandardError
+      puts ''
+      puts '🛑Invalid input: Please select a number from 1-9'
+      puts ''
+      retry
+    end
+    cells[num - 1]="x"
+  end
+  result = 0
+  if result.positive?
+    puts ''
+    puts '🏆Lucky is the winner🏆'
+  elsif result.negative?
+    puts '🏆Peter is the winner🏆'
   else
-    puts "It's #{players[1]}'s turn!"
+    puts "👏It's a tie👏"
   end
-  begin
-    puts ''
-    puts 'Please select an available space from the board'
-    num = gets.chomp.to_i
 
-    raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num-1].is_a?(Integer)
-  rescue StandardError
-    puts ''
-    puts '🛑Invalid input: Please select a number from 1-9'
-    puts ''
-    retry
-  end
-  cells[num - 1]="x"
-end
-result = 0
-if result.positive?
+  puts "Want to repeat? (Y/N)"
+ decission = gets.chomp
+ if decission == "Y"
+  check_winner
+ else
   puts ''
-  puts '🏆Lucky is the winner🏆'
-elsif result.negative?
-  puts '🏆Peter is the winner🏆'
-else
-  puts "👏It's a tie👏"
+  puts "⛳️Game Over⛳️"
+ end
 end
-puts ''
-puts "⛳️Game Over⛳️"
+
+check_winner
+
