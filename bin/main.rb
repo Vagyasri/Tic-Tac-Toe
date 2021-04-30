@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# rubocop: disable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
 
 def user_presentation
   puts ''
@@ -44,14 +45,14 @@ def check_winner
       puts 'Please select an available space from the board'
       num = gets.chomp.to_i
 
-      raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num-1].is_a?(Integer)
+      raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num - 1].is_a?(Integer)
     rescue StandardError
       puts ''
       puts '🛑Invalid input: Please select a number from 1-9'
       puts ''
       retry
     end
-    cells[num - 1]="x"
+    cells[num - 1] = 'x'
   end
   result = 0
   if result.positive?
@@ -63,15 +64,16 @@ def check_winner
     puts "👏It's a tie👏"
   end
 
-  puts "Want to repeat? (Y/N)"
- decission = gets.chomp.upcase
- if decission == "Y"
-  check_winner
- else
-  puts ''
-  puts "⛳️Game Over⛳️"
- end
+  puts 'Want to repeat? (Y/N)'
+  decission = gets.chomp.upcase
+  if decission == 'Y'
+    check_winner
+  else
+    puts ''
+    puts '⛳️Game Over⛳️'
+  end
 end
 
 check_winner
 
+# rubocop: enable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
