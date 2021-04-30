@@ -25,7 +25,7 @@
 - Twitter: [@Vagyasri](https://twitter.com/Vagyasri)
 - LinkedIn: [Bhagyashree Patra](https://www.linkedin.com/in/bhagyashree-patra-029bb059/)
 
-**Peter Mbuthia**
+👤 **Peter Mbuthia**
 
 - GitHub: [@blakbox23](https://github.com/blakbox23)
 - Twitter: [@blakbox23](https://twitter.com/blakbox23)
