@@ -29,8 +29,8 @@ def user_interface(array)
   puts ''
 end
 
-cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 players = user_presentation
 (0..8).each do |i|
   user_interface(cells)
@@ -43,13 +43,15 @@ players = user_presentation
     puts ''
     puts 'Please select an available space from the board'
     num = gets.chomp.to_i
-    raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !num.is_a?(Integer)
+
+    raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num-1].is_a?(Integer)
   rescue StandardError
     puts ''
     puts 'Ivalid input: Please select a number from 1-9'
     puts ''
     retry
   end
+  cells[num - 1]="x"
 end
 result = 0
 if result.positive?
