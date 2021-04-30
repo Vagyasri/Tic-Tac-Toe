@@ -25,9 +25,33 @@ def user_interface(array)
   puts ' +---+---+---+'
   puts " | #{array[6]} | #{array[7]} | #{array[8]} |"
   puts ' +---+---+---+'
+  puts ''
 end
 
-user_presentation
-
 cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-user_interface(cells)
+
+players = user_presentation
+(0..8).each do |i|
+  if i.even?
+    user_interface(cells)
+    puts "It's #{players[0]}'s turn!"
+    puts ''
+    puts 'Please select an available space from the board'
+    num = gets.chomp.to_i
+  else
+    user_interface(cells)
+    puts "It's #{players[1]}'s turn!"
+    puts ''
+    puts 'Please select an available space from the board'
+    num = gets.chomp.to_i
+  end
+end
+
+if true
+  puts ''
+  puts "Lucky is the winner"
+elsif !true
+  puts "Peter is the winner"
+else
+  puts "It's a tie"
+end
