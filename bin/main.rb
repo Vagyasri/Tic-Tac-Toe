@@ -44,7 +44,6 @@ def check_winner
       puts ''
       puts 'Please select an available space from the board'
       num = gets.chomp.to_i
-
       raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num - 1].is_a?(Integer)
     rescue StandardError
       puts ''
