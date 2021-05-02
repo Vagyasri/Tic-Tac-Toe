@@ -75,7 +75,6 @@ def check_winner
         retry
       end
       cells[num - 1] = player_o.marker
-      user_interface(cells)
       player_o.spt.push(num)
       logic = Logic.new(player_o)
       if logic.winner?
