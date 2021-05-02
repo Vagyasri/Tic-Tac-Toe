@@ -13,7 +13,7 @@ def user_presentation
     puts 'Name of the Player 1'
     player_one = gets.chomp
     puts ''
-    if player_one == ' ' || player_one.length < 2 || player_one == '  ' || player_one == Number
+    if player_one == ' ' || player_one.length < 2 || player_one == '  '
       raise StandardError,
             player_one
     end
@@ -26,7 +26,7 @@ def user_presentation
     puts 'Name of the Player 2'
     player_two = gets.chomp
     puts ''
-    if player_two == ' ' || player_two.length < 2 || player_two == '  ' || player_two == Number
+    if player_two == ' ' || player_two.length < 2 || player_two == '  '
       raise StandardError,
             player_two
     end
