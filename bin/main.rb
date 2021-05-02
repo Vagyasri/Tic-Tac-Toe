@@ -10,25 +10,31 @@ def user_presentation
   puts 'WELCOME TO TIC-TAC-TOE'
   puts ''
   begin
-  puts 'Name of the Player 1'
-  player_one = gets.chomp
-  puts ''
-  raise StandardError, player_one if player_one == " " || player_one.length < 2 || player_one == "  " || player_one == Number
+    puts 'Name of the Player 1'
+    player_one = gets.chomp
+    puts ''
+    if player_one == ' ' || player_one.length < 2 || player_one == '  ' || player_one == Number
+      raise StandardError,
+            player_one
+    end
   rescue StandardError
-        puts '🛑 Invalid Name: Please enter atleast first 2 letters of your name to continue'
-        puts ''
-        retry
+    puts '🛑 Invalid Name: Please enter atleast first 2 letters of your name to continue'
+    puts ''
+    retry
   end
-      begin    
-  puts 'Name of the Player 2'
-  player_two = gets.chomp
-  puts ''
-  raise StandardError, player_two if player_two == " " || player_two.length < 2 || player_two == "  " || player_two == Number
-      rescue StandardError
-        puts '🛑 Invalid Name: Please enter atleast first 2 letters of your name to continue'
-        puts ''
-        retry
-      end
+  begin
+    puts 'Name of the Player 2'
+    player_two = gets.chomp
+    puts ''
+    if player_two == ' ' || player_two.length < 2 || player_two == '  ' || player_two == Number
+      raise StandardError,
+            player_two
+    end
+  rescue StandardError
+    puts '🛑 Invalid Name: Please enter atleast first 2 letters of your name to continue'
+    puts ''
+    retry
+  end
   sleep 1
   puts "#{player_one} will play with X and #{player_two} will play with O"
   puts ''
