@@ -1,11 +1,11 @@
-WIN1 = [1, 2, 3]
-WIN2 = [4, 5, 6]
-WIN3 = [7, 8, 9]
-WIN4 = [1, 4, 7]
-WIN5 = [2, 5, 8]
-WIN6 = [3, 6, 9]
-WIN7 = [1, 5, 9]
-WIN8 = [3, 5, 7]
+WIN1 = [1, 2, 3].freeze
+WIN2 = [4, 5, 6].freeze
+WIN3 = [7, 8, 9].freeze
+WIN4 = [1, 4, 7].freeze
+WIN5 = [2, 5, 8].freeze
+WIN6 = [3, 6, 9].freeze
+WIN7 = [1, 5, 9].freeze
+WIN8 = [3, 5, 7].freeze
 
 class Logic
   attr_reader :player
