@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # rubocop: disable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
+# rubocop: disable Metrics/BlockLength, Metrics/AbcSize
 
 require '../lib/logic'
 require '../lib/player'
@@ -36,17 +37,16 @@ end
 def check_winner
   cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   players = user_presentation
-  player_x = Player.new({name: players[0], marker: "X", spt: []})
-  player_o = Player.new({name: players[1], marker: "O", spt: []})
+  player_x = Player.new({ name: players[0], marker: 'X', spt: [] })
+  player_o = Player.new({ name: players[1], marker: 'O', spt: [] })
   (0..8).each do |i|
-    
     user_interface(cells)
     if i.even?
       puts "It's #{players[0]}'s turn!"
       begin
         puts 'Please select an available space on the board'
         num = gets.chomp.to_i
-  
+
         raise StandardError, num if num.nil? || !(num >= 1 && num < 10) || !cells[num - 1].is_a?(Integer)
       rescue StandardError
         puts '🛑 Invalid input: Please select a number from 1-9'
@@ -57,16 +57,14 @@ def check_winner
       user_interface(cells)
       player_x.spt.push(num)
       logic = Logic.new(player_x)
-      
+
       if logic.winner?
-        puts ""
+        puts ''
         return " 🏆 #{player_x.name} IS THE WINNER 🏆 "
-        puts ""
-        
       end
     else
       puts "It's #{players[1]}'s turn!"
-    
+
       begin
         puts 'Please select an available space on the board'
         num = gets.chomp.to_i
@@ -81,20 +79,19 @@ def check_winner
       user_interface(cells)
       player_o.spt.push(num)
       logic = Logic.new(player_o)
-       if logic.winner?
-        puts ""
+      if logic.winner?
+        puts ''
         return " 🏆 #{player_o.name} IS THE WINNER 🏆 "
-       
+
       end
     end
   end
-  return "👏 It's a tie 👏"
+  "👏 It's a tie 👏"
 end
-  
 
 def repeater
   sleep 1
-  puts ""
+  puts ''
   puts 'Want to repeat? (Y/N)'
   decission = gets.chomp.upcase
   if decission == 'Y'
@@ -110,4 +107,5 @@ end
 puts check_winner
 repeater
 
-# # rubocop: enable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
+# rubocop: enable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
+# rubocop: enable Metrics/BlockLength, Metrics/AbcSize
