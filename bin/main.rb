@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 # rubocop: disable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
 
-require "./lib/logic"
-require "./lib/player"
+require '../lib/logic'
+require '../lib/player'
 
 def user_presentation
   puts ''
