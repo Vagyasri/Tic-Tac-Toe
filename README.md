@@ -4,12 +4,11 @@
 
 > We built a tic-tac-toe game on the command line where two human players can play against each other and the board is displayed in between turns.
 
-> Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner. 
+> Tic-tac-toe is a game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner. 
 
 ## Built With
 
 - Ruby
-
 
 ## Getting Started
 
@@ -18,6 +17,21 @@
 - [Copy this link](https://github.com/Vagyasri/Tic-Tac-Toe.git)
 - Open your terminal or command line
 - Run "git clone [Paste this link](https://github.com/Vagyasri/Tic-Tac-Toe.git)"
+
+## How to play "Tic-Tac-Toe"
+
+- This game can be played between any two people.
+- Run "ruby main.rb" in your terminal
+- Initially, it will be asked to enter your names (for player 1 and player 2)
+- You can enter minimum two characters of your name to move forward
+- The first player will play with '❌' and the other with '⭕️'
+- It will be player turnwise, Player 1 goes first, then Player 2, then again Player 1, likewise until you reach the following condition
+- For winning this game, one has to create a row/column/diagonal of three '❌'s or '⭕️'s first
+- If no one will be able to make so, it will be a tie and will ask for continuing another match or quit the game
+
+#### Tip: If you're going first, then the best move you can make is to move into the center. This will maximize your chances of winning
+
+   ### 🎊 🎉 Have fun 🎊 🎉
 
 ## Author
 
