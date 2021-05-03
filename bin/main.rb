@@ -78,6 +78,7 @@ def check_winner
       logic = Logic.new(player_x)
 
       if logic.winner?
+        user_interface(cells)
         puts ''
         return " 🏆 #{player_x.name} IS THE WINNER 🏆 "
       end
@@ -98,6 +99,7 @@ def check_winner
       player_o.spt.push(num)
       logic = Logic.new(player_o)
       if logic.winner?
+        user_interface(cells)
         puts ''
         return " 🏆 #{player_o.name} IS THE WINNER 🏆 "
 
