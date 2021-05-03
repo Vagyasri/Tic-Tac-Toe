@@ -36,7 +36,7 @@ def user_presentation
     retry
   end
   sleep 1
-  puts "#{player_one} will play with X and #{player_two} will play with O"
+  puts "#{player_one} will play with ❌ and #{player_two} will play with ⭕️"
   puts ''
   puts "🔥 Let's G0! 🔥"
   puts ''
@@ -57,8 +57,8 @@ end
 def check_winner
   cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   players = user_presentation
-  player_x = Player.new({ name: players[0], marker: 'X', spt: [] })
-  player_o = Player.new({ name: players[1], marker: 'O', spt: [] })
+  player_x = Player.new({ name: players[0], marker: '❌', spt: [] })
+  player_o = Player.new({ name: players[1], marker: '⭕️', spt: [] })
   (0..8).each do |i|
     user_interface(cells)
     if i.even?
