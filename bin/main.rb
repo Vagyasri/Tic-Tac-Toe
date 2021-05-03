@@ -57,8 +57,8 @@ end
 def check_winner
   cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   players = user_presentation
-  player_x = Player.new({ name: players[0], marker: '❌', spt: [] })
-  player_o = Player.new({ name: players[1], marker: '⭕️', spt: [] })
+  player_x = Player.new({ name: players[0], marker: '✖️', spt: [] })
+  player_o = Player.new({ name: players[1], marker: '🅾️', spt: [] })
   (0..8).each do |i|
     user_interface(cells)
     if i.even?
@@ -102,10 +102,10 @@ def check_winner
         user_interface(cells)
         puts ''
         return " 🏆 #{player_o.name} IS THE WINNER 🏆 "
-
       end
     end
   end
+  puts ''
   "👏 It's a tie 👏"
 end
 
