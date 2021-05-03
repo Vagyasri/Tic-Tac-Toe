@@ -2,8 +2,8 @@
 # rubocop: disable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
 # rubocop: disable Metrics/BlockLength, Metrics/AbcSize
 
-require '../lib/logic'
-require '../lib/player'
+require_relative '../lib/logic'
+require_relative '../lib/player'
 
 def user_presentation
   puts ''
