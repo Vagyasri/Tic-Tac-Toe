@@ -18,7 +18,7 @@ describe Logic do
   end
   describe '#winner?' do
     player = Player.new({ name: 'Lucky', marker: '✖️', spt: [1, 2, 3] })
-    it 'returns true if WIN1 = player.spt' do
+    it 'returns true if WIN1 and player.spt have equal values' do
       logic = Logic.new(player)
       expect(logic.winner?).to eq true
     end
