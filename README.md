@@ -28,7 +28,7 @@
 
 ## How to run tests
 
-- You can simply run "rspec" in the terminal by cd into the directory inorder torun the tests
+- You can simply run "rspec" in the terminal by cd into the directory in order torun the tests
 - You can also run "rspec file-path" for the particular file you want to test from the directory
 - You can run "rubocop" inorder to check the linter errors
 
