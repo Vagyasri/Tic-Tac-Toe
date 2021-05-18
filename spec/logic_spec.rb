@@ -1,4 +1,5 @@
 require './lib/logic'
+require './lib/player'
 
 describe Logic do
   describe '#initialize' do
@@ -8,17 +9,19 @@ describe Logic do
         play = Logic.new({name: "Lucky"})
         expect(play.player).to eq({name:"Lucky"})
       end
-  end
+    end
     context "when we don't pass an argument" do
       it 'we should raise an error' do 
         expect { Logic.new }.to raise_error(StandardError)
       end
+    end
   end
+
+  describe '#winner?' do
+    player = Player.new({ name: 'Lucky', marker: '✖️', spt: [1, 2, 3] })
+    it "" do
+      logic = Logic.new(player)
+      expect(logic.winner?).to eq true
+    end  
   end
-  #  describe '#winner?' do
-  #    it 'Checks the row/column/diagonal values of the board' do
-  #     win = ["x", "x", "x"].freeze
-  #     expect()
-  #   end
-  #  end
 end
