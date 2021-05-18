@@ -6,5 +6,4 @@ class Player
     @marker = input.fetch(:marker)
     @spt = input.fetch(:spt)
   end
-  
 end
