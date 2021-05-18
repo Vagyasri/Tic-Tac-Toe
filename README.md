@@ -18,6 +18,20 @@
 - Open your terminal or command line
 - Run "git clone [Paste this link](https://github.com/Vagyasri/Tic-Tac-Toe.git)"
 
+## How to set up tests
+
+- Boot up your terminal and punch in "gem install rspec" to install RSpec
+- You can verify your version of RSpec with "rspec --version"
+- cd into project directory "Tic-Tac-Toe" and type "rspec --init" to initialize RSpec within the project
+- This will generate two files, ".rspec" and "spec/spec_helper.rb"
+- You can create the ruby test file inside the sprc directory (eg: logic_spec.rb, player_spec.rb)
+
+## How to run tests
+
+- You can simply run "rspec" in the terminal by cd into the directory inorder torun the tests
+- You can also run "rspec file-path" for the particular file you want to test from the directory
+- You can run "rubocop" inorder to check the linter errors
+
 ## How to play "Tic-Tac-Toe"
 
 - This game can be played between any two people.
