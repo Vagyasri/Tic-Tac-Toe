@@ -25,7 +25,7 @@
 - You can verify your version of RSpec with "rspec --version"
 - cd into project directory "Tic-Tac-Toe" and type "rspec --init" to initialize RSpec within the project
 - This will generate two files, ".rspec" and "spec/spec_helper.rb"
-- You can create the ruby test file inside the sprc directory (eg: logic_spec.rb, player_spec.rb)
+- You can create the ruby test file inside the spec directory (eg: logic_spec.rb, player_spec.rb)
 
 ## How to run tests
 
