@@ -9,6 +9,7 @@
 ## Built With
 
 - Ruby
+- Rspec
 
 ## Getting Started
 
